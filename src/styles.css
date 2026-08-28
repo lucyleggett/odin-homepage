@@ -59,9 +59,10 @@ h6 {
   --ff-inter: "Inter", Arial, sans-serif;
   --ff-poppins: "Poppins", Arial, sans-serif;
 
-  --fs-body: 1em;
+  --fs-description : 0.9em;
+  --fs-body: 1.08em;
   --fs-h1: 3.5em;
-  --fs-h2: 2em;
+  --fs-h2: 2.5em;
   --fs-h3: 1.5em;
 
   --fw-light: 300;
@@ -94,9 +95,17 @@ h1 {
   font-size: var(--fs-h1);
 }
 
+h2 {
+  font-size: var(--fs-h2);
+  text-align: center;
+  margin-bottom: 0.1em;
+}
+
 p {
   font-family: var(--ff-inter);
   font-weight: var(--fw-regular);
+  font-size: var(--fs-body);
+  line-height: 1.5;
 }
 
 body {
@@ -116,9 +125,10 @@ header {
 
 .portrait {
   position: relative;
-  width: fit-content;
+  width: 100vw;
   height: fit-content;
   padding: 2em;
+  margin-bottom: 0.8em;
   z-index: 2;
 }
 
@@ -143,4 +153,64 @@ header {
   transform: skewY(-20deg);
   z-index: 1;
   box-shadow: rgba(100, 100, 111, 0.3) 0px 7px 29px 0px;
+}
+
+main {
+  padding: 0 1.5em;
+}
+
+.socials {
+  display: flex;
+  justify-content: center;
+  gap: 1em;
+  margin: 1em auto;
+}
+
+button {
+  width: fit-content;
+  height: fit-content;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+button > img {
+  width: 2em;
+  height: 2em;
+}
+
+.card-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2em;
+}
+
+.card {
+  height: 100%;
+  background-color: var(--clr-steel-blue);
+  box-shadow: rgba(100, 100, 111, 0.3) 0px 7px 29px 0px;
+}
+
+.explore-btns {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0.5em;
+}
+
+button.explore > img {
+  width: 1.5em;
+  height: 1.5em;
+}
+
+.project-detail {
+  margin: 1em;
+}
+
+.project-title {
+  display: flex;
+  justify-content: space-between;
+}
+
+.project-desc > p {
+  font-size: var(--fs-description);
 }
