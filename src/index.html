@@ -1,0 +1,226 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      http-equiv="Content-Security-Policy"
+      content="default-src 'none'; script-src 'self' 'unsafe-eval'; style-src 'self' https://fonts.googleapis.com; font-src https://fonts.gstatic.com; img-src 'self'; connect-src 'self' ws://localhost:8080 http://localhost:8080;"
+    />
+
+    <title>Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header>
+      <div class="image-head">
+        <div class="diagonal-box"></div>
+        <div class="portrait">
+          <img
+            src="./images/300w-omniwomen-headshot-straight.jpg"
+            alt="Smiling young white woman with blonde hair"
+            srcset="
+              ./images/600w-omniwomen-headshot-straight.jpg 2x,
+              ./images/omniwomen-headshot-straight.jpg      3x
+            "
+          />
+          <h1>Lucy<br>Leggett</h1>
+        </div>
+      </div>
+      <div class="about">
+        <h2>About me</h2>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque
+          sagittis magna leo, at ultrices turpis dictum et. In elit tortor,
+          consectetur non ornare id, maximus a quam. Nullam ac felis at ligula
+          vestibulum iaculis vel sit amet dolor. Nulla lectus leo, tempus luctus
+          sollicitudin at, tempus nec erat. Vestibulum ultrices.
+        </p>
+        <div class="socials">
+          <button>
+            <img class="github" src="./images/photo.jpg" alt="Github" />
+          </button>
+          <button>
+            <img class="linkedin" src="./images/photo.jpg" alt="LinkedIn" />
+          </button>
+          <button>
+            <img class="email" src="./images/photo.jpg" alt="Email" />
+          </button>
+        </div>
+      </div>
+    </header>
+    <main>
+      <h2>My work</h2>
+      <div>
+        <img src="./images/photo.jpg" alt="" />
+        <div class="project-detail">
+          <h3 class="project-name">Project 1</h3>
+          <div class="explore-btns">
+            <button class="explore github">
+              <img src="./images/photo.jpg" alt="" />
+            </button>
+            <button class="explore popout">
+              <img src="./images/photo.jpg" alt="" />
+            </button>
+          </div>
+          <div class="project-desc">
+            <p>
+              Praesent ornare venenatis nunc in placerat. Suspendisse laoreet
+              congue lorem eget fringilla. Nullam sed gravida ligula. Phasellus
+              consectetur quis massa at pellentesque. Quisque ac varius lectus,
+              quis interdum lacus. Nunc vulputate lacinia est vitae fermentum.
+              Mauris elementum, eros sit amet vulputate consectetur, turpis urna
+              aliquam mauris, non mattis odio metus.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div>
+        <img src="./images/photo.jpg" alt="" />
+        <div class="project-detail">
+          <h3 class="project-name">Project 2</h3>
+          <div class="explore-btns">
+            <button class="explore github">
+              <img src="./images/photo.jpg" alt="" />
+            </button>
+            <button class="explore popout">
+              <img src="./images/photo.jpg" alt="" />
+            </button>
+          </div>
+          <div class="project-desc">
+            <p>
+              Nulla mollis urna vel diam sollicitudin sagittis vel sit amet
+              risus. Mauris tincidunt ligula ac convallis consectetur. Nulla sed
+              libero justo. Quisque eu pellentesque ante. Nullam ligula sem,
+              interdum nec dictum ac, fermentum ut augue. Mauris eget eros
+              convallis eros tempus iaculis. Proin sed dignissim sapien,
+              consequat hendrerit erat. Nam.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div>
+        <img src="./images/photo.jpg" alt="" />
+        <div class="project-detail">
+          <h3 class="project-name">Project 3</h3>
+          <div class="explore-btns">
+            <button class="explore github">
+              <img src="./images/photo.jpg" alt="" />
+            </button>
+            <button class="explore popout">
+              <img src="./images/photo.jpg" alt="" />
+            </button>
+          </div>
+          <div class="project-desc">
+            <p>
+              Nulla eget condimentum lorem. Ut ultrices, enim id sagittis
+              viverra, diam mi efficitur sem, ac blandit ante libero nec leo. Ut
+              suscipit, purus quis dictum faucibus, lacus turpis elementum
+              nulla, vel cursus risus orci vel nulla. Mauris euismod placerat
+              augue a rhoncus. Curabitur tempor euismod elit, in faucibus justo
+              consectetur.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div>
+        <img src="./images/photo.jpg" alt="" />
+        <div class="project-detail">
+          <h3 class="project-name">Project 4</h3>
+          <div class="explore-btns">
+            <button class="explore github">
+              <img src="./images/photo.jpg" alt="" />
+            </button>
+            <button class="explore popout">
+              <img src="./images/photo.jpg" alt="" />
+            </button>
+          </div>
+          <div class="project-desc">
+            <p>
+              Ut id lectus fringilla, posuere sem placerat, euismod nisl. Donec
+              interdum, est vel sagittis pretium, diam turpis euismod odio, sed
+              lacinia velit felis at tellus. Quisque et quam a libero tristique
+              congue viverra in ligula. Etiam cursus viverra felis, ut iaculis
+              sem fringilla in. Ut eget elit tincidunt enim auctor.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div>
+        <img src="./images/photo.jpg" alt="" />
+        <div class="project-detail">
+          <h3 class="project-name">Project 5</h3>
+          <div class="explore-btns">
+            <button class="explore github">
+              <img src="./images/photo.jpg" alt="" />
+            </button>
+            <button class="explore popout">
+              <img src="./images/photo.jpg" alt="" />
+            </button>
+          </div>
+          <div class="project-desc">
+            <p>
+              Curabitur sed dictum felis, nec blandit velit. Nam eget porttitor
+              enim, sed laoreet justo. Quisque non ligula eu ante tincidunt
+              efficitur. Fusce ac lorem vitae magna commodo rutrum sed vitae
+              elit. Praesent rhoncus sem non risus lobortis scelerisque. Aliquam
+              semper, velit ut gravida porttitor, orci ante tempus sapien, a
+              ornare.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div>
+        <img src="./images/photo.jpg" alt="" />
+        <div class="project-detail">
+          <h3 class="project-name">Project 6</h3>
+          <div class="explore-btns">
+            <button class="explore github">
+              <img src="./images/photo.jpg" alt="" />
+            </button>
+            <button class="explore popout">
+              <img src="./images/photo.jpg" alt="" />
+            </button>
+          </div>
+          <div class="project-desc">
+            <p>
+              Nunc nec eros et ante mattis tincidunt. Nulla mollis, odio nec
+              malesuada lacinia, libero tellus accumsan felis, ut tempor libero
+              augue vel enim. Ut nulla velit, dictum sit amet ipsum vitae,
+              fermentum blandit lorem. Nam maximus magna et nisi malesuada, at
+              aliquet elit sollicitudin. Curabitur turpis sapien, elementum
+              hendrerit dolor.
+            </p>
+          </div>
+        </div>
+      </div>
+    </main>
+    <footer>
+      <h2>Contact me</h2>
+      <p class="cta">
+        Please get in touch if you think our work could be mutually beneficial!
+      </p>
+      <p class="contact-details">
+        18 Crocodile Street<br />Singapore 123456
+      </p>
+      <p class="contact-details">8899 3141<br />lucy.leggett@hotmail.com</p>
+      <div class="socials">
+        <button>
+          <img class="github" src="./images/photo.jpg" alt="Github" />
+        </button>
+        <button>
+          <img class="linkedin" src="./images/photo.jpg" alt="LinkedIn" />
+        </button>
+        <button>
+          <img class="email" src="./images/photo.jpg" alt="Email" />
+        </button>
+      </div>
+      <picture></picture>
+    </footer>
+  </body>
+</html>
