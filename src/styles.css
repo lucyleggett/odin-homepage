@@ -139,7 +139,7 @@ header:before {
   z-index: 2;
 }
 
-picture {
+header picture {
   box-shadow: rgba(100, 100, 111, 0.3) 0px 7px 29px 0px;
 }
 
@@ -231,17 +231,23 @@ footer {
   background-color: #ffe66d;
 }
 
-.contact {
-  padding: 1em 1em 0 1em;
+footer > h2 {
+  padding-top: 0.5em;
 }
 
-p.contact-details {
+footer > p {
   font-size: var(--fs-description);
   margin-top: 0.5em;
+  padding: 0 20px;
+}
+
+p.cta {
+  font-size: var(--fs-body);
+  font-weight: var(--fw-bold);
 }
 
 @media (min-width: 500px) {
-  picture {
+  header picture {
     transform-origin: bottom right;
     transform: scale(1.2);
     max-width: 45%;
@@ -273,5 +279,41 @@ p.contact-details {
 
   .socials {
     justify-content: end;
+  }
+
+  footer {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: repeat(5, auto);
+    padding: 1em;
+    align-items: center;
+  }
+
+  footer picture {
+    grid-column: 2 / 3;
+    grid-row: span 5;
+    justify-self: end;
+    transform: scale(0.85);
+  }
+
+  footer h2 {
+    grid-area: 1 / 1 / 2 / 2;
+  }
+
+  p.cta {
+    font-size: var(--fs-description);
+    grid-area: 2 / 1 / 3 / 2;
+  }
+
+  p.address {
+    grid-area: 3 / 1 / 4 / 2;
+  }
+
+  p.contact-details {
+    grid-area: 4 / 1 / 5 / 2;
+  }
+
+  footer .socials {
+    grid-area: 5 / 1 / 6 / 2;
   }
 }
