@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta
       http-equiv="Content-Security-Policy"
-      content="default-src 'none'; script-src 'self' 'unsafe-eval'; style-src 'self' https://fonts.googleapis.com; font-src https://fonts.gstatic.com; img-src 'self'; connect-src 'self' ws://localhost:8080 http://localhost:8080;"
+      content="default-src 'none'; script-src 'self' 'unsafe-eval'; style-src 'self' https://fonts.googleapis.com https://cdn.jsdelivr.net; font-src https://fonts.gstatic.com https://cdn.jsdelivr.net; img-src 'self' https://cdn.jsdelivr.net https://api.iconify.design/; connect-src 'self' ws://localhost:8080 http://localhost:8080;"
     />
 
     <title>Portfolio</title>
@@ -14,6 +14,12 @@
     <link
       href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
       rel="stylesheet"
+    />
+
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css"
     />
   </head>
   <body>
@@ -45,13 +51,27 @@
         </p>
         <div class="socials">
           <button>
-            <img class="github" src="./images/photo.jpg" alt="Github" />
+            <i
+              class="github devicon-github-original colored"
+              role="img"
+              aria-label="Github"
+            ></i>
           </button>
           <button>
-            <img class="linkedin" src="./images/photo.jpg" alt="LinkedIn" />
+            <img
+              class="linkedin"
+              src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/linkedin/linkedin-plain.svg"
+              alt="LinkedIn"
+            />
           </button>
           <button>
-            <img class="email" src="./images/photo.jpg" alt="Email" />
+            <img
+              class="email"
+              src="https://api.iconify.design/griddy-icons:email-filled.svg"
+              alt="Email"
+              width="24"
+              height="24"
+            />
           </button>
         </div>
       </div>
@@ -65,19 +85,30 @@
                 <h3 class="project-name">Project 1</h3>
                 <div class="explore-btns">
                   <button class="explore github">
-                    <img src="./images/photo.jpg" alt="" />
+                    <i
+                      class="github devicon-github-original colored"
+                      role="img"
+                      aria-label="Github"
+                    ></i>
                   </button>
                   <button class="explore popout">
-                    <img src="./images/photo.jpg" alt="" />
+                    <img
+                      class="open"
+                      src="https://api.iconify.design/majesticons:open.svg"
+                      alt="Open"
+                      width="24"
+                      height="24"
+                    />
                   </button>
                 </div>
               </div>
               <div class="project-desc">
                 <p>
-                  Praesent ornare venenatis nunc in placerat. Suspendisse laoreet
-                  congue lorem eget fringilla. Nullam sed gravida ligula. Phasellus
-                  consectetur quis massa at pellentesque. Quisque ac varius lectus,
-                  quis interdum lacus. Nunc vulputate lacinia est vitae fermentum.
+                  Praesent ornare venenatis nunc in placerat. Suspendisse
+                  laoreet congue lorem eget fringilla. Nullam sed gravida
+                  ligula. Phasellus consectetur quis massa at pellentesque.
+                  Quisque ac varius lectus, quis interdum lacus. Nunc vulputate
+                  lacinia est vitae fermentum.
                 </p>
               </div>
             </div>
@@ -89,19 +120,29 @@
                 <h3 class="project-name">Project 1</h3>
                 <div class="explore-btns">
                   <button class="explore github">
-                    <img src="./images/photo.jpg" alt="" />
+                    <i
+                      class="github devicon-github-original colored"
+                      role="img"
+                      aria-label="Github"
+                    ></i>
                   </button>
                   <button class="explore popout">
-                    <img src="./images/photo.jpg" alt="" />
+                    <img
+                      class="open"
+                      src="https://api.iconify.design/majesticons:open.svg"
+                      alt="Open"
+                      width="24"
+                      height="24"
+                    />
                   </button>
                 </div>
               </div>
               <div class="project-desc">
                 <p>
                   Nulla mollis urna vel diam sollicitudin sagittis vel sit amet
-                  risus. Mauris tincidunt ligula ac convallis consectetur. Nulla sed
-                  libero justo. Quisque eu pellentesque ante. Nullam ligula sem,
-                  interdum nec dictum ac, fermentum ut augue.
+                  risus. Mauris tincidunt ligula ac convallis consectetur. Nulla
+                  sed libero justo. Quisque eu pellentesque ante. Nullam ligula
+                  sem, interdum nec dictum ac, fermentum ut augue.
                 </p>
               </div>
             </div>
@@ -113,19 +154,29 @@
                 <h3 class="project-name">Project 1</h3>
                 <div class="explore-btns">
                   <button class="explore github">
-                    <img src="./images/photo.jpg" alt="" />
+                    <i
+                      class="github devicon-github-original colored"
+                      role="img"
+                      aria-label="Github"
+                    ></i>
                   </button>
                   <button class="explore popout">
-                    <img src="./images/photo.jpg" alt="" />
+                    <img
+                      class="open"
+                      src="https://api.iconify.design/majesticons:open.svg"
+                      alt="Open"
+                      width="24"
+                      height="24"
+                    />
                   </button>
                 </div>
               </div>
               <div class="project-desc">
                 <p>
                   Nulla eget condimentum lorem. Ut ultrices, enim id sagittis
-                  viverra, diam mi efficitur sem, ac blandit ante libero nec leo. Ut
-                  suscipit, purus quis dictum faucibus, lacus turpis elementum
-                  nulla, vel cursus risus orci vel nulla.
+                  viverra, diam mi efficitur sem, ac blandit ante libero nec
+                  leo. Ut suscipit, purus quis dictum faucibus, lacus turpis
+                  elementum nulla, vel cursus risus orci vel nulla.
                 </p>
               </div>
             </div>
@@ -137,19 +188,29 @@
                 <h3 class="project-name">Project 1</h3>
                 <div class="explore-btns">
                   <button class="explore github">
-                    <img src="./images/photo.jpg" alt="" />
+                    <i
+                      class="github devicon-github-original colored"
+                      role="img"
+                      aria-label="Github"
+                    ></i>
                   </button>
                   <button class="explore popout">
-                    <img src="./images/photo.jpg" alt="" />
+                    <img
+                      class="open"
+                      src="https://api.iconify.design/majesticons:open.svg"
+                      alt="Open"
+                      width="24"
+                      height="24"
+                    />
                   </button>
                 </div>
               </div>
               <div class="project-desc">
                 <p>
-                  Ut id lectus fringilla, posuere sem placerat, euismod nisl. Donec
-                  interdum, est vel sagittis pretium, diam turpis euismod odio, sed
-                  lacinia velit felis at tellus. Quisque et quam a libero tristique
-                  congue viverra in ligula.
+                  Ut id lectus fringilla, posuere sem placerat, euismod nisl.
+                  Donec interdum, est vel sagittis pretium, diam turpis euismod
+                  odio, sed lacinia velit felis at tellus. Quisque et quam a
+                  libero tristique congue viverra in ligula.
                 </p>
               </div>
             </div>
@@ -161,19 +222,30 @@
                 <h3 class="project-name">Project 1</h3>
                 <div class="explore-btns">
                   <button class="explore github">
-                    <img src="./images/photo.jpg" alt="" />
+                    <i
+                      class="github devicon-github-original colored"
+                      role="img"
+                      aria-label="Github"
+                    ></i>
                   </button>
                   <button class="explore popout">
-                    <img src="./images/photo.jpg" alt="" />
+                    <img
+                      class="open"
+                      src="https://api.iconify.design/majesticons:open.svg"
+                      alt="Open"
+                      width="24"
+                      height="24"
+                    />
                   </button>
                 </div>
               </div>
               <div class="project-desc">
                 <p>
-                  Curabitur sed dictum felis, nec blandit velit. Nam eget porttitor
-                  enim, sed laoreet justo. Quisque non ligula eu ante tincidunt
-                  efficitur. Fusce ac lorem vitae magna commodo rutrum sed vitae
-                  elit. Praesent rhoncus sem non risus lobortis scelerisque.
+                  Curabitur sed dictum felis, nec blandit velit. Nam eget
+                  porttitor enim, sed laoreet justo. Quisque non ligula eu ante
+                  tincidunt efficitur. Fusce ac lorem vitae magna commodo rutrum
+                  sed vitae elit. Praesent rhoncus sem non risus lobortis
+                  scelerisque.
                 </p>
               </div>
             </div>
@@ -185,19 +257,29 @@
                 <h3 class="project-name">Project 1</h3>
                 <div class="explore-btns">
                   <button class="explore github">
-                    <img src="./images/photo.jpg" alt="" />
+                    <i
+                      class="github devicon-github-original colored"
+                      role="img"
+                      aria-label="Github"
+                    ></i>
                   </button>
                   <button class="explore popout">
-                    <img src="./images/photo.jpg" alt="" />
+                    <img
+                      class="open"
+                      src="https://api.iconify.design/majesticons:open.svg"
+                      alt="Open"
+                      width="24"
+                      height="24"
+                    />
                   </button>
                 </div>
               </div>
               <div class="project-desc">
                 <p>
                   Nunc nec eros et ante mattis tincidunt. Nulla mollis, odio nec
-                  malesuada lacinia, libero tellus accumsan felis, ut tempor libero
-                  augue vel enim. Ut nulla velit, dictum sit amet ipsum vitae,
-                  fermentum blandit lorem.
+                  malesuada lacinia, libero tellus accumsan felis, ut tempor
+                  libero augue vel enim. Ut nulla velit, dictum sit amet ipsum
+                  vitae, fermentum blandit lorem.
                 </p>
               </div>
             </div>
@@ -206,26 +288,48 @@
       </div>
     </main>
     <footer>
-      <h2>Contact me</h2>
-      <p class="cta">
-        Please get in touch if you think our work could be mutually beneficial!
-      </p>
-      <p class="contact-details">
-        18 Crocodile Street<br />Singapore 123456
-      </p>
-      <p class="contact-details">8899 3141<br />lucy.leggett@hotmail.com</p>
-      <div class="socials">
-        <button>
-          <img class="github" src="./images/photo.jpg" alt="Github" />
-        </button>
-        <button>
-          <img class="linkedin" src="./images/photo.jpg" alt="LinkedIn" />
-        </button>
-        <button>
-          <img class="email" src="./images/photo.jpg" alt="Email" />
-        </button>
+      <div class="contact">
+        <h2>Contact me</h2>
+        <p class="cta">
+          Please get in touch if you think our work could be mutually
+          beneficial!
+        </p>
+        <p class="contact-details">18 Crocodile Street<br />Singapore 123456</p>
+        <p class="contact-details">8899 3141<br />lucy.leggett@hotmail.com</p>
+        <div class="socials">
+          <button>
+            <i
+              class="github devicon-github-original colored"
+              role="img"
+              aria-label="Github"
+            ></i>
+          </button>
+          <button>
+            <img
+              class="linkedin"
+              src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/linkedin/linkedin-plain.svg"
+              alt="LinkedIn"
+            />
+          </button>
+          <button>
+            <img
+              class="email"
+              src="https://api.iconify.design/griddy-icons:email-filled.svg"
+              alt="Email"
+              width="24"
+              height="24"
+            />
+          </button>
+        </div>
       </div>
-      <picture></picture>
+      <img
+        src="./images/300w-omniwomen-headshot-profile.jpg"
+        alt="Smiling young white woman with blonde hair"
+        srcset="
+          ./images/600w-omniwomen-headshot-profile.jpg 2x,
+          ./images/omniwomen-headshot-profile.jpg      3x
+        "
+      />
     </footer>
   </body>
 </html>

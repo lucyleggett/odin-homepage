@@ -59,8 +59,8 @@ h6 {
   --ff-inter: "Inter", Arial, sans-serif;
   --ff-poppins: "Poppins", Arial, sans-serif;
 
-  --fs-description : 0.9em;
-  --fs-body: 1.08em;
+  --fs-description: 1em;
+  --fs-body: 1.1em;
   --fs-h1: 3.5em;
   --fs-h2: 2.5em;
   --fs-h3: 1.5em;
@@ -109,7 +109,10 @@ p {
 }
 
 body {
-  max-width: 100vw;
+  width: 100vw;
+  height: 100vh;
+  margin: 0;
+  overscroll-behavior: none;
 }
 
 header {
@@ -125,10 +128,13 @@ header {
 
 .portrait {
   position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   width: 100vw;
   height: fit-content;
   padding: 2em;
-  margin-bottom: 0.8em;
+  margin-bottom: 2em;
   z-index: 2;
 }
 
@@ -138,16 +144,16 @@ header {
 
 .portrait > h1 {
   height: fit-content;
-  margin-top: -2.2em;
-  line-height: 0.95;
-  padding: 0 0.4em;
+  margin-top: -2.5em;
+  line-height: 0.98;
+  padding: 0 0.8em;
 }
 
 .diagonal-box {
   position: absolute;
   inset: 0;
-  margin-top: -5em;
-  max-height: 90%;
+  margin-top: -8em;
+  max-height: 95%;
   max-width: 100vw;
   background-color: var(--clr-gold);
   transform: skewY(-20deg);
@@ -167,8 +173,6 @@ main {
 }
 
 button {
-  width: fit-content;
-  height: fit-content;
   border: none;
   background-color: transparent;
   cursor: pointer;
@@ -177,6 +181,10 @@ button {
 button > img {
   width: 2em;
   height: 2em;
+}
+
+div.socials > button > i {
+  font-size: 2em;
 }
 
 .card-container {
@@ -194,10 +202,19 @@ button > img {
 .explore-btns {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 0.5em;
+  gap: 0.7em;
 }
 
 button.explore > img {
+  width: 1.5em;
+  height: 1.5em;
+}
+
+button.explore > i {
+  font-size: 1.5em;
+}
+
+button.explore {
   width: 1.5em;
   height: 1.5em;
 }
@@ -209,8 +226,21 @@ button.explore > img {
 .project-title {
   display: flex;
   justify-content: space-between;
+  margin-bottom: 0.7em;
 }
 
 .project-desc > p {
   font-size: var(--fs-description);
+}
+
+footer {
+  position: sticky;
+  display: flex;
+  flex-direction: column;
+  margin-top: 3em;
+  background-color: #ffe66d;
+}
+
+.contact {
+  padding: 1em;
 }
