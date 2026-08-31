@@ -24,21 +24,18 @@
   </head>
   <body>
     <header>
-      <div class="image-head">
-        <div class="diagonal-box"></div>
-        <div class="portrait">
-          <img
-            src="./images/300w-omniwomen-headshot-straight.jpg"
-            alt="Smiling young white woman with blonde hair"
-            srcset="
-              ./images/600w-omniwomen-headshot-straight.jpg 2x,
-              ./images/omniwomen-headshot-straight.jpg      3x
-            "
-          />
-          <h1>Lucy Leggett</h1>
-        </div>
-      </div>
       <div class="about">
+        <picture>
+          <source
+            srcset="./images/cropped-omniwomen-headshot-straight.jpg"
+            media="(min-width: 501px)"
+          />
+          <img
+            src="./images/omniwomen-headshot-straight.jpg"
+            alt="Smiling young white woman with blonde hair"
+          />
+        </picture>
+        <h1>Lucy Leggett</h1>
         <h2>About me</h2>
         <p>
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque
