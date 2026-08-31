@@ -242,5 +242,10 @@ footer {
 }
 
 .contact {
-  padding: 1em;
+  padding: 1em 1em 0 1em;
+}
+
+p.contact-details {
+  font-size: var(--fs-description);
+  margin-top: 0.5em;
 }
