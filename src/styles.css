@@ -269,21 +269,22 @@ picture img {
 
   .about > h2 {
     padding: 0;
-    margin: 0;
+    margin-bottom: 0.5em;
   }
 
   h1 {
     position: absolute;
     white-space: nowrap;
     z-index: 3;
-    top: 2.75em;
-    right: -1em;
+    bottom: 92%;
+    right: -0.75em;
+    text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.2);
   }
 
   .about {
     max-width: 70%;
     background-color: white;
-    margin: 2cm 3em 2em 3em;
+    margin-top: 10%;
     padding: 2em 2em 0 2em;
     transform: translateY(1em);
     box-shadow: rgba(100, 100, 111, 0.3) 0px 7px 29px 0px;
