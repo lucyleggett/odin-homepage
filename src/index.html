@@ -5,9 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta
       http-equiv="Content-Security-Policy"
-      content="default-src 'none'; script-src 'self' 'unsafe-eval'; style-src 'self' https://fonts.googleapis.com https://cdn.jsdelivr.net; font-src https://fonts.gstatic.com https://cdn.jsdelivr.net; img-src 'self' https://cdn.jsdelivr.net https://api.iconify.design/; connect-src 'self' ws://localhost:8080 http://localhost:8080;"
+      content="default-src 'none'; 
+    script-src 'self' 'unsafe-eval'; 
+    style-src 'self' https://fonts.googleapis.com https://cdn.jsdelivr.net https://cdnjs.cloudflare.com; 
+    font-src https://fonts.gstatic.com https://cdn.jsdelivr.net https://cdnjs.cloudflare.com; 
+    img-src 'self' https://cdn.jsdelivr.net https://api.iconify.design/; 
+    connect-src 'self' ws://localhost:8080 http://localhost:8080;"
     />
-
     <title>Portfolio</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -15,7 +19,10 @@
       href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
       rel="stylesheet"
     />
-
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    />
     <link
       rel="stylesheet"
       type="text/css"
@@ -49,26 +56,20 @@
         <div class="socials">
           <button>
             <i
-              class="github devicon-github-original colored"
+              class="devicon-github-original"
               role="img"
               aria-label="Github"
             ></i>
           </button>
           <button>
-            <img
-              class="linkedin"
-              src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/linkedin/linkedin-plain.svg"
-              alt="LinkedIn"
-            />
+            <i
+              class="devicon-linkedin-plain"
+              role="img"
+              aria-label="LinkedIn"
+            ></i>
           </button>
           <button>
-            <img
-              class="email"
-              src="https://api.iconify.design/griddy-icons:email-filled.svg"
-              alt="Email"
-              width="24"
-              height="24"
-            />
+            <i class="fa-solid fa-envelope" role="img" aria-label="Email"></i>
           </button>
         </div>
       </div>
@@ -78,26 +79,27 @@
         <h2>My work</h2>
         <div class="card-container">
           <div class="card">
-            <img src="./images/battleships-screengrab.png" alt="Screenshot of battleships game" />
+            <img
+              src="./images/battleships-screengrab.png"
+              alt="Screenshot of battleships game"
+            />
             <div class="project-detail">
               <div class="project-title">
                 <h3 class="project-name">Project 1</h3>
                 <div class="explore-btns">
                   <button class="explore github">
                     <i
-                      class="github devicon-github-original colored"
+                      class="devicon-github-original"
                       role="img"
                       aria-label="Github"
                     ></i>
                   </button>
                   <button class="explore popout">
-                    <img
-                      class="open"
-                      src="https://api.iconify.design/majesticons:open.svg"
-                      alt="Open"
-                      width="24"
-                      height="24"
-                    />
+                    <i
+                      class="fa-solid fa-arrow-up-right-from-square"
+                      role="img"
+                      aria-label="Open"
+                    ></i>
                   </button>
                 </div>
               </div>
@@ -120,19 +122,17 @@
                 <div class="explore-btns">
                   <button class="explore github">
                     <i
-                      class="github devicon-github-original colored"
+                      class="devicon-github-original"
                       role="img"
                       aria-label="Github"
                     ></i>
                   </button>
                   <button class="explore popout">
-                    <img
-                      class="open"
-                      src="https://api.iconify.design/majesticons:open.svg"
-                      alt="Open"
-                      width="24"
-                      height="24"
-                    />
+                    <i
+                      class="fa-solid fa-arrow-up-right-from-square"
+                      role="img"
+                      aria-label="Open"
+                    ></i>
                   </button>
                 </div>
               </div>
@@ -154,19 +154,17 @@
                 <div class="explore-btns">
                   <button class="explore github">
                     <i
-                      class="github devicon-github-original colored"
+                      class="devicon-github-original"
                       role="img"
                       aria-label="Github"
                     ></i>
                   </button>
                   <button class="explore popout">
-                    <img
-                      class="open"
-                      src="https://api.iconify.design/majesticons:open.svg"
-                      alt="Open"
-                      width="24"
-                      height="24"
-                    />
+                    <i
+                      class="fa-solid fa-arrow-up-right-from-square"
+                      role="img"
+                      aria-label="Open"
+                    ></i>
                   </button>
                     />
                   </button>
@@ -190,19 +188,17 @@
                 <div class="explore-btns">
                   <button class="explore github">
                     <i
-                      class="github devicon-github-original colored"
+                      class="devicon-github-original"
                       role="img"
                       aria-label="Github"
                     ></i>
                   </button>
                   <button class="explore popout">
-                    <img
-                      class="open"
-                      src="https://api.iconify.design/majesticons:open.svg"
-                      alt="Open"
-                      width="24"
-                      height="24"
-                    />
+                    <i
+                      class="fa-solid fa-arrow-up-right-from-square"
+                      role="img"
+                      aria-label="Open"
+                    ></i>
                   </button>
                     />
                   </button>
@@ -226,19 +222,17 @@
                 <div class="explore-btns">
                   <button class="explore github">
                     <i
-                      class="github devicon-github-original colored"
+                      class="devicon-github-original"
                       role="img"
                       aria-label="Github"
                     ></i>
                   </button>
                   <button class="explore popout">
-                    <img
-                      class="open"
-                      src="https://api.iconify.design/majesticons:open.svg"
-                      alt="Open"
-                      width="24"
-                      height="24"
-                    />
+                    <i
+                      class="fa-solid fa-arrow-up-right-from-square"
+                      role="img"
+                      aria-label="Open"
+                    ></i>
                   </button>
                     />
                   </button>
@@ -263,19 +257,17 @@
                 <div class="explore-btns">
                   <button class="explore github">
                     <i
-                      class="github devicon-github-original colored"
+                      class="devicon-github-original"
                       role="img"
                       aria-label="Github"
                     ></i>
                   </button>
                   <button class="explore popout">
-                    <img
-                      class="open"
-                      src="https://api.iconify.design/majesticons:open.svg"
-                      alt="Open"
-                      width="24"
-                      height="24"
-                    />
+                    <i
+                      class="fa-solid fa-arrow-up-right-from-square"
+                      role="img"
+                      aria-label="Open"
+                    ></i>
                   </button>
                 </div>
               </div>
@@ -307,26 +299,20 @@
         <div class="socials">
           <button>
             <i
-              class="github devicon-github-original colored"
+              class="devicon-github-original"
               role="img"
               aria-label="Github"
             ></i>
           </button>
           <button>
-            <img
-              class="linkedin"
-              src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/linkedin/linkedin-plain.svg"
-              alt="LinkedIn"
-            />
+            <i
+              class="devicon-linkedin-plain"
+              role="img"
+              aria-label="LinkedIn"
+            ></i>
           </button>
           <button>
-            <img
-              class="email"
-              src="https://api.iconify.design/griddy-icons:email-filled.svg"
-              alt="Email"
-              width="24"
-              height="24"
-            />
+            <i class="fa-solid fa-envelope" role="img" aria-label="Email"></i>
           </button>
         </div>
       </div>
